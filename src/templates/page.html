@@ -4,16 +4,38 @@ title: Index page
 {% extends "layouts/_layout.html" %}
 
 {% block content %}
-	
-	{# variable example #}
-	<h1>{{title}}</h1>
 
-	
-	{# partial example #}
-	{% include "partials/_header.html" %}
 
-	{# mixin example #}
-	{{mixins.icon('facebook')}}
+<section class="hero">
+  <div class="container">
+    {% include "partials/_header.html" %}
+    <div class="hero__title">
+      <div class="title__main"><strong class="blue">Choose Us</strong> And <strong>Take</strong> Your Business To
+        <strong class="blue">High Level</strong></div>
+      <div class="title__benefits">
+        <span>Google <strong>Advertising </strong></span>
+        <span class="between">
+          <span></span>
+          <span></span>
+          <span></span>
+        </span>
+        <span>Content <strong>Marketing</strong></span>
+        <span class="between">
+            <span></span>
+            <span></span>
+            <span></span>
+          </span>
+        <span>Social <strong>Campaings</strong></span>
+      </div>
+    </div>
+    <div class="hero__dots">
+      <span class="dot"></span>
+      <span class="dot"></span>
+      <span class="dot"></span>
+    </div>
+  </div>
+</section>
+
 
 
 {% endblock %}
