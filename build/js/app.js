@@ -8,4 +8,7 @@ $(function () {
       $('.header').removeClass('sticky');
     }
   });
+  $('.menu-toggle').on('click', function () {
+    $('.right').toggleClass('active');
+  });
 });
