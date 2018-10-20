@@ -19,7 +19,6 @@ $color1: #fff
 		justify-content: center
 		align-items: center
 
-
 .header
 	position: absolute
 	top: 0
@@ -27,7 +26,12 @@ $color1: #fff
 	width: 100%
 	display: flex
 	align-items: center
-	padding: 26px 0
+	padding: 26px 0px
+	transition: all .5s ease-out
+	z-index: 1
+	.container
+		width: 100%
+
 	.right
 		display: flex
 		align-items: center
@@ -95,3 +99,11 @@ nav
 		margin: 0 2px
 		display: inline-block
 		vertical-align: middle
+.header.sticky
+	background: #6356ed
+	position: fixed
+	top: 0
+	left: 0
+	right: 0
+	z-index: 9999
+
